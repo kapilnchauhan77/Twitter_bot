@@ -29,7 +29,7 @@ def reply_to_tweets():
             print('found #kapil!', flush=True)
             print('responding back...', flush=True)
             api.update_status('@' + mention.user.screen_name +
-                    ' #kapil Ha bol ne', mention.id)
+                    ' #kapil Ya bro', mention.id)
 
 while True:
     reply_to_tweets()
