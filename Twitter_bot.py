@@ -30,6 +30,11 @@ def reply_to_tweets():
             print('responding back...', flush=True)
             api.update_status('@' + mention.user.screen_name +
                     ' #kapil Ya bro', mention.id)
+        else:
+            print('found something!!!', flush=True)
+            print('responding back...', flush=True)
+            api.update_status('@' + mention.user.screen_name +
+                              random.randrange(10), mention.id)
 
 while True:
     reply_to_tweets()
